@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="docsstyles.css">
+	<script src="docsjs.js"></script>
+</head>
+<body>
+	<div class="layout">
+		<div class="header primary font">
+			<span>Doc's Appointment</span>
+		</div>
+		<div id="taskbar" class="taskbar secondary">
+			<div id="search" class="search">
+				<img style="margin-left:40px"src="resources/Search.svg" alt="Search Icon" class="inline">
+				<div contentEditable="true" id="searchtextbox" style="text-align: center;" onclick="clr(this.id)" onblur="if(this.innerHTML==='')fill(this.id,'Search Hospitals or Clinics')">Search Hospital or Clinics</div>
+			</div>
+			<div id="toolbar">
+				<!-- to Change -->
+				<div id="toolitem">
+					<div id="userid">#1234</div>
+				</div>
+				<div id="toolitem">
+					<img src="resources/usercontact.svg" alt="" onclick="hide('usercontact')">
+					<div id="usercontact"></div>
+				</div>
+				<div id="toolitem">
+					<img src="resources/notification.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
